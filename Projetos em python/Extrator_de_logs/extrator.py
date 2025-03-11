@@ -118,10 +118,12 @@ def main():
     campos_disponiveis = ['ip', 'data_hora', 'metodo', 'request', 'codigo', 'bytes', 'referrer', 'user_agent']
     
     # Exibe os campos disponíveis para o usuário escolher
-    print("=" * 72)
-    print("Campos disponíveis".center(72), '\n')
+    print("=" * 75)  # Exibe uma linha
+    print("Arquivo de log carregado com sucesso!".center(72), '\n') # Exibe uma mensagem de sucesso
+    print("Campos disponíveis".center(72), '\n') # Exibe uma mensagem indicando os campos disponíveis
     print(" | ".join(campos_disponiveis))  # Exibe os campos possíveis
-    print("=" * 72)
+    print("=" * 75) # Exibe uma linha de separação
+
     
     # Solicita ao usuário os campos que deseja agrupar
     campos_selecionados = [campo.strip() for campo in input("Digite os campos desejados separados por vírgula: ").split(',')]
